@@ -172,19 +172,19 @@ turbulences on physical and OS resources.
 It is used by the Chaos Toolkit in rich Chaos Engineering experiments. To install and run Chaos Mesh, open a new terminal window and run:
 
 ```console
-$ curl -sSL https://mirrors.chaos-mesh.org/v1.0.2/install.sh | bash
+$ curl -sSL https://mirrors.chaos-mesh.org/v2.7.0/install.sh | bash
 ```
 
 See all its services running:
 
 ```console
-$ kubectl -n chaos-testing get all
+$ kubectl -n chaos-mesh get all
 ```
 
 You can setup the dashboard in a new terminal window as follows:
 
 ```console
-$ kubectl -n chaos-testing port-forward --address 0.0.0.0 service/chaos-dashboard 2333:2333
+$ kubectl -n chaos-mesh port-forward --address 0.0.0.0 service/chaos-dashboard 2333:2333
 ```
 
 You can then access the dashboard by going to <http://localhost:2333/>
